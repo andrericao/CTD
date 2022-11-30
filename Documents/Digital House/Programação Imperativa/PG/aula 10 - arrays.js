@@ -16,11 +16,12 @@ console.log(grupoDeAmigos2[2][grupoDeAmigos2[2].length - 1]);
 // SOMAR ARRAY 
 
 function soma (array) {
+  let somar = 0 
   //    INÍCIO   /    CONDIÇÃO    / MODIFICADOR
   for (let i = 0; i < array.length; i ++) {
-    array[i] += array[i]
+  somar += array[i]
   }
-  return array
+  return somar
 }
 console.log('Resultador da função soma');
 console.log(soma(numbers));

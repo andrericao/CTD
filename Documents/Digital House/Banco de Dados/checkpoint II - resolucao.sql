@@ -18,8 +18,6 @@ Não se esqueça de que, em relacionamento n:n precisa ter uma entidade intermed
 os relacionamentos são 1:n mesmo. Nas entidades estádios e grupos não tem nem um atributo que caracterize, nem um nome, assim como em país. 
 
 Vc confundiu muito os relacionamento aí. Merece rever essa materia, hein?
-Vou te dar um 7 pelo raciocínio e pq ficou muito top o  seu case. Mas precisa treinar mais, blz?
-Tenha um excelente fim de semana. Bom descanso!🥳
 */
 
 DROP DATABASE IF EXISTS Copa_do_mundo;
@@ -70,7 +68,7 @@ FOREIGN KEY (cidade_id)
 );
 
 
-CREATE TABLE jogos(/*EU TROUXE A CAVE ESTRANGEIRA DO ESTÁDIO*/
+CREATE TABLE jogos(/*EU TROUXE A CHAVE ESTRANGEIRA DO ESTÁDIO*/
 jogo_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 hora TIME,
 dia DATE,
@@ -109,5 +107,8 @@ ADD gropo_id INT;
 ALTER TABLE times
 ADD FOREIGN KEY (gropo_id)
 	REFERENCES grupos (grupo_id);
+    
+ALTER TABLE times
+CHANGE gropo_id grupo_id INT;
     
 /*Quis fazer desse jeito, COM O ALTER TABLE, a fim de praticar*/

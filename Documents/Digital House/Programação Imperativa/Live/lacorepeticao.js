@@ -4,16 +4,17 @@ const participanteC =  [7, 5, 10, 8, 3];
 
 // Por que não dá o console.log
 
-let i = 0;
+
 
 function media(array){
-    let soma = 0;
-    while (i < array.length) {
-      soma += array[i];
-      i++;
-    }
-    media = soma/array.length
-    return media;
+  let i = 0;
+  let soma = 0;
+  while (i < array.length) {
+    soma += array[i];
+    i++;
+  }
+  let media = soma/array.length
+  return media;
 };
 
 function maior(array){
@@ -25,9 +26,9 @@ function maior(array){
     if (a > b) {
       b = a
     }
-    i++;
+  i++;
   }
-  maior = b
+  let maior = b
   return maior;
 };
 
