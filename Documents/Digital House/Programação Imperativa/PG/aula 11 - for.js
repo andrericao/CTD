@@ -27,5 +27,6 @@ utilizar dois loops (for).*/
 
 //   INÍCIO   / CONDIÇÃO  /   MODIFICADOR
 for(let num = 1; num <= 10; num++) {
-      console.log(5 * num)
+  for (let vezes = 1; vezes <= 10; vezes++)
+      console.log(vezes * num)
 }
