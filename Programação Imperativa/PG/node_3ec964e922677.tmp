@@ -1,0 +1,50 @@
+/* PASSO 1 (1,5 PONTOS)
+Crie uma função construtora ou Classe Aluno que tenha como atributos: nome
+(string), quantidade de faltas (number) e notas (array de números).
+*/
+
+class Aluno {
+	constructor(nome, faltas, notas) {
+		this.nome = nome;
+		this.faltas = faltas;
+		this.notas = notas;
+	}
+} 
+
+/* PASSO 2 (1,5 PONTOS)
+Na função construtora crie o método calcularMedia que retorna a média de suas
+notas. Também terá um método chamado faltas, que simplesmente aumenta o número de
+faltas em 1. Crie alguns alunos para testar a sua função construtora
+*/
+
+var aluno = {
+	informacoes:[],
+	criarAluno(nome, faltas, notas) {
+		var novoAluno = new Aluno(nome, faltas, notas);
+		this.informacoes.push(novoAluno)
+	},
+	mediaNotas(array) {
+		let nota = 0;
+		let soma = 0;
+		for (let i = 0; i < aluno.informacoes.length; i++) {
+			nota = aluno.informacoes[i].notas
+			for (let ii = 0; ii < nota.length; i++) {
+				soma += nota[ii]
+			}
+			let media = soma / nota.length 
+			console.log(media)
+		}		
+	}
+}
+
+aluno.criarAluno('Andre', 2, [8.5, 10, 9, 6]); //8,375
+aluno.criarAluno('Nathalia', 0, [9, 7.5, 8, 9.9]); //8,6
+/*
+for(let i = 0; i < aluno.informacoes.length; i++) {
+	console.log(aluno.informacoes[i].notas);
+	
+}
+*/
+//aluno.mediaNotas();
+
+console.log(aluno.mediaNotas());

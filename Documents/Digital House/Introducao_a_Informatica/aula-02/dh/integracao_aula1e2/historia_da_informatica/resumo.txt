@@ -1,4 +1,0 @@
-1) Abra o VS Code e, em seguida, o terminal Integrado Git Bash (Ver guia de instalação
-do Git Bash).
-2) Renomear as pastas da esquerda com os nomes corretos localizados à direita:
-
