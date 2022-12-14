@@ -23,7 +23,7 @@ let aluno2 = new Aluno("dani", 2, [9, 2, 8, 4]);
 let aluno3 = new Aluno("helter", 1, [5, 5, 8, 10]);
 let aluno4 = new Aluno("marcio", 0, [6, 6, 0, 3]);
 let aluno5 = new Aluno("Thiago", 3, [8, 7, 6, 8]);
-
+add .
 const listaDeEstudantes = [aluno1, aluno2, aluno3, aluno4, aluno5];
 
 const curso = {
