@@ -146,7 +146,8 @@ VALUES ('Valéria', 'F'/*, 'Vender', 6 - 'Comprar', 15 - 'Vender', 11 - 'Vender'
 ('Homero', 'M'/*, 'Vender', 15*/);
 
 -- ===================================  TODOS FILIAS E FUNCIONARIOS EM TODAS AS REGIÕES  =================================
-
+/*CREATE VIEW funcionario_por_filial
+AS*/
 SELECT f.nome 'Funcionário', fun.nome 'Função', fil.nome 'Filial', e.nome 'Localização', c.nome 'Cidade', es.nome 'Estado'
 FROM funcionarios f
 LEFT JOIN funcoes fun
@@ -191,9 +192,33 @@ SELECT * FROM clientes;
 
 SELECT * FROM funcionarios;
 
+SELECT f.funcao_id, COUNT(f.funcao_id), fu.nome 'Função' 
+FROM funcionarios f
+INNER JOIN funcoes fu
+ON fu.funcao_id = f.funcao_id
+group by fu.funcao_id;
+
 SELECT * FROM filiais;
 
 SELECT * FROM funcoes;
 
-SELECT * 
-FROM clientes;
+SELECT * FROM imoveis;
+
+SELECT * FROM funcionarios;
+
+SELECT * FROM clientes;
+
+DELIMITER $$
+CREATE PROCEDURE quantidade_de_imovel_por_cliente()
+BEGIN
+SELECT c.nome 'Proprietrio', COUNT(i.imovel_id) 'QTD de Imóveis', SUM(i.valor) 'Valor em Imóvel'
+FROM clientes c
+INNER JOIN imoveis i
+ON i.proprietario_id = c.cliente_id
+INNER JOIN funcionarios f
+ON i.corretor_id = f.funcionario_id
+GROUP BY c.nome;
+END
+$$
+
+call quantidade_de_imovel_por_cliente();
