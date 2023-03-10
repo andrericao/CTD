@@ -24,7 +24,14 @@ var pessoas = {
   }
 }
 
-pessoas.criarPessoa('André', 32, 'Rio de Janeiro', 'Kotlin');
+let testeArray = [];
+
+function criarPessoa2(nome, idade, cidade, linguagem) {
+  var novaPessoa = new Dados(nome, idade, cidade, linguagem);
+  testeArray.push(novaPessoa);
+}
+
+criarPessoa2('André', 32, 'Rio de Janeiro', 'Kotlin');
 pessoas.criarPessoa('Nathalia', 27, 'Rua 8', 'Enfermagem')
 //console.log(pessoas.informacoes[0].idade);
 
@@ -33,4 +40,4 @@ for (let i = 0; i < pessoas.informacoes.length; i++) {
   console.log(pessoas.informacoes[i].idade);
 }
 }
-console.log(pessoas.informacoes[1].cidade);
+console.log(testeArray);
