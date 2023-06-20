@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2023-06-10T15:51:39.545Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="5bLkRmWySKRbaV1Zl23_" version="21.3.8" type="device">
+  <diagram name="Página-1" id="z08ALp8JFuixwf-6zG5J">
+    <mxGraphModel dx="865" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mGzio3rmgqeGrBbvbICV-1" value="Projeto" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="210" width="300" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-2" value="- numeroDoProjeto: Integer;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-1" vertex="1">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-3" value="- nomeDoProjeto: String;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-1" vertex="1">
+          <mxGeometry y="60" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-4" value="- cidadeDoProjeto: String;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-1" vertex="1">
+          <mxGeometry y="90" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-15" value="- statusDoProjeto: String;&lt;br&gt;&lt;br&gt;- ProjetoResidencial: ProjetoResidencial;&lt;br&gt;&lt;br&gt;- projetoDepartamental:projetoDepartamental;&lt;br&gt;- obra : Obra;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-1" vertex="1">
+          <mxGeometry y="120" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-16" value="+ Projeto(Integer numeroDoProjeto, String nomeDoProjeto, String cidadeDoProjeto, String statusDoProjeto);&lt;br&gt;&lt;br&gt;- indicarStatus(): String;&lt;br&gt;&lt;br&gt;- verificarDataDeTermino(): String;&amp;nbsp;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-1" vertex="1">
+          <mxGeometry y="220" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-5" value="Obra" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="240" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-6" value="&lt;br&gt;- numeroDaObra: Integer;&lt;br&gt;- endereco: String;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-5" vertex="1">
+          <mxGeometry y="30" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-7" value="- dataDeInicio: LocalDate;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-5" vertex="1">
+          <mxGeometry y="60" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-8" value="- dataDeTerminoPrevista: LocalDate;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-5" vertex="1">
+          <mxGeometry y="90" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-9" value="- dataDeTerminoReal: LocalDate;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-5" vertex="1">
+          <mxGeometry y="120" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-10" value="+ Obra(Integer numeroDaObra, String endereco, LocalDate dataDeInicio, LocalDate dataDeTerminoPrevisa, LocalDate dataDeTerminoReal);" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-5" vertex="1">
+          <mxGeometry y="150" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mGzio3rmgqeGrBbvbICV-3" target="mGzio3rmgqeGrBbvbICV-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-13" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="770" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-14" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="900" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.488;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mGzio3rmgqeGrBbvbICV-17" target="mGzio3rmgqeGrBbvbICV-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-17" value="ProjetoResidencial" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="600" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-18" value="- tamanhoDoTerreno: double;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-17" vertex="1">
+          <mxGeometry y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-19" value="- numeroDeBanheiros: Integer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-17" vertex="1">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-20" value="- numeroDeQuartos: Integer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-17" vertex="1">
+          <mxGeometry y="90" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-22" value="+ ProjetoResidencial(double tamanhoDoTerreno, Integer numeroDeBanheiros, Integer numeroDeQuartos);" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-17" vertex="1">
+          <mxGeometry y="120" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.488;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mGzio3rmgqeGrBbvbICV-23" target="mGzio3rmgqeGrBbvbICV-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-23" value="ProjetoDepartamental" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="600" width="410" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-24" value="- numeroDeAndares: Integer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-23" vertex="1">
+          <mxGeometry y="30" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-25" value="- numeroDeApartamentos: Integer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-23" vertex="1">
+          <mxGeometry y="60" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mGzio3rmgqeGrBbvbICV-27" value="+ projetoDepartamental(Integer numeroDeAndares, Integer numeroDeApartamentos, Integer numeroDeQuartos);&lt;br&gt;&lt;br&gt;-&amp;nbsp;comparandoDepartamentos&lt;span style=&quot;background-color: initial;&quot;&gt;(): String;&lt;/span&gt;&lt;br&gt;- verificarTipoDePredio(): String;&lt;br&gt;- calcularNumeroDeApartamentos(): int;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="mGzio3rmgqeGrBbvbICV-23" vertex="1">
+          <mxGeometry y="90" width="410" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
