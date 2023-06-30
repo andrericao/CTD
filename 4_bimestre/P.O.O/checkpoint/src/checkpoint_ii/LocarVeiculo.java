@@ -2,50 +2,40 @@ package checkpoint_ii;
 
 public class LocarVeiculo {
 
-    public static void main(String[] args) {
-        /*
+    private static Cliente cliente;
 
-        Cliente cliente1 = new Cliente(12233441, "André");
-
-        cliente1.setFone("6284306136");
-        cliente1.setEndereco("Av. X");
+    public static void main(String[] args) throws ClienteCadastroException {
 
 
-        Cliente cliente2 = new Cliente(2223332, "Joaozinho");
+        Locadora digitalCar = new Locadora ("Locadora Digital Car");
 
-        Veiculos v1 = new Veiculos("Gol","Branco","NLT 6666",true);
-        Veiculos v2 = new Veiculos("Celta","Preto","NNN 4458",false);
-        Veiculos v3 = new Veiculos("Clio","Vermelho","OLT 0000",true);
-        Veiculos v4 = new Veiculos("Palio","Prata","OOO 0101",true);
+        // Criação de veículos
+        Veiculo fiat = new Veiculo("fiesta", "branco", "DHPL - 2023");
 
-        System.out.println("============Dados Cliente==============");
+        Veiculo honda = new Veiculo("civic", "preto", "VAMO - 2021");
 
-        System.out.println("Nome: " + cliente1.getNome() + "\n"
-                         + "Fone: " + cliente1.getFone() + "\n"
-                         + "Endereço: " + cliente1.getEndereco() + "\n"
-                         + "CPF: " + cliente1.getCpf());
+        // Adicionando veículo na listaVeiculo
+        digitalCar.addVeiculo(fiat);
+        digitalCar.addVeiculo(honda);
 
+        // Lendo listaVeiculo
+        digitalCar.lerVeiculo();
 
-        System.out.println("=============Dados Veiculo===============");
-
-        v2.alugarVeiculo();
-
-        System.out.println("=============Dados Veiculo===============");
-
-        v3.alugarVeiculo();
-
-        System.out.println("=============Status Contrato===============");
-
-        Funcionario atendente1 = new Funcionario("atendente1", "locador");
-
-        atendente1.fazerContrato(cliente1, v1);
-        atendente1.statusContrato(cliente1.getNome(), cliente1.getCpf(), v1.getModelo(), v1.getCor());
-        */
-
+        //Criando funcionário
         Funcionario recepcionista = new Funcionario("Marcos", "locador");
+        
+        // Uso de sobrecaraga criando funcionário mirim (jovem aprendiz)
+        Funcionario recepcionistaMirim = new Funcionario ("Matheus", "jovem Aprendiz", 16);
 
-        recepcionista.atenderNovoCliente();
+        // a locadora já cria o cliente o adicionando na listaCliente
+        // esta chamada do construtor usa o scanner
+        digitalCar.addCliente(recepcionista.cadastroNovoCliente());
+        digitalCar.addCliente(recepcionista.cadastroNovoCliente());
+        digitalCar.addCliente(recepcionista.cadastroNovoCliente());
 
+
+        // um chamado de método
+        digitalCar.lerCliente(cliente);
 
     }
 }

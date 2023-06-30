@@ -1,0 +1,72 @@
+Link da Aula 20 - 21/06/2023:
+
+ 1) https://docs.google.com/document/d/1TkOAhDqzBZRoz7g02DRZHLitHgMeLsrc/edit
+
+  2)  Colocar no código:
+      <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+</dependencies>
+
+  3)  1- criar novo projeto
+      2- copiar e colar dependencia do maven depois de properties
+      3- clicar no botão do maven no alto direito da tela
+      4- no projeto na aba da esquerda, clico em src
+      5- clico em main
+      6- clico em java
+      7- com botão direito, crio nova classe
+      8- buscar o webdriver através do commando public static void main (String[] args)
+      9- Webdriver driver = new ChromdeDriver ()
+      10- driver.get ("https://saucedemo.com")
+
+  4) https://www.selenium.dev/selenium-ide/
+
+
+  5) Para adicionar o local do chromedriver.exe ao PATH do sistema operacional Windows, você pode seguir estas etapas:
+1.	Primeiro, localize o diretório onde está localizado o arquivo chromedriver.exe no seu sistema.
+2.	Copie o caminho completo desse diretório. Por exemplo, suponha que o caminho completo seja C:\Caminho\Para\chromedriver.exe.
+3.	Abra o "Menu Iniciar" e pesquise por "Variáveis de Ambiente".
+4.	Selecione a opção "Editar as variáveis de ambiente do sistema".
+5.	Na janela "Propriedades do Sistema", clique no botão "Variáveis de Ambiente".
+6.	Na seção "Variáveis do Sistema", localize a variável "Path" e clique em "Editar".
+7.	Na janela "Editar Variável de Ambiente", clique em "Novo" para adicionar um novo caminho.
+8.	Insira o caminho completo para o diretório que contém o chromedriver.exe. Por exemplo: C:\Caminho\Para\chromedriver.exe
+9.	Clique em "OK" para fechar todas as janelas de configuração.
+10.	Reinicie o seu editor de código (por exemplo, IntelliJ, VSCode) para garantir que as alterações tenham efeito.
+Depois de adicionar o local do chromedriver.exe ao PATH do sistema, o Selenium irá localizar automaticamente o chromedriver.exe no PATH configurado.
+Febrônio Bomfim Alves 22:01
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+
+
+ 6)  Para este exercício da aula 21/06/2023 tem que baixar: Java, InteliJ, Selenium.
+
+FEBRÔNIO 
+
+Segue o código que fiz até agora! Ele loga, adiciona dois elementos ao carrinho, clica no carrinho, clica em Checkout
+
+WebDriver driver = new ChromeDriver();
+        driver.get("https://saucedemo.com");
+
+        WebElement campoUsuario = driver.findElement(By.id("user-name"));
+        campoUsuario.sendKeys("standard_user");
+
+        WebElement campoSenha = driver.findElement(By.id("password"));
+        campoSenha.sendKeys("secret_sauce");
+
+        WebElement botaoLogin = driver.findElement(By.id("login-button"));
+        botaoLogin.click();
+
+        WebElement botaoAdicionarAoCarrinho01 = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+        botaoAdicionarAoCarrinho01.click();
+
+        WebElement botaoAdicionarAoCarrinho02 = driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));
+        botaoAdicionarAoCarrinho02.click();
+
+        WebElement linkCarrinho  = driver.findElement(By.className("shopping_cart_link"));
+        linkCarrinho.click();
+
+        WebElement botaoCheckOut = driver.findElement(By.id("checkout"));
+        botaoCheckOut.click();

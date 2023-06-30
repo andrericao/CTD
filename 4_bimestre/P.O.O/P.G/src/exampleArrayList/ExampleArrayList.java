@@ -8,7 +8,10 @@ public class ExampleArrayList {
         ArrayList<String> nomeArraylist = new ArrayList<>();
 
         nomeArraylist.add("andré");
+        nomeArraylist.add("noah");
+        nomeArraylist.add("nathalia");
 
         System.out.println(nomeArraylist);
+
     }
 }

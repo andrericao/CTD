@@ -161,8 +161,5 @@ public class ColecoesOperacoes {
             System.out.println((String)o);
         }
 
-
-
-
     }
 }

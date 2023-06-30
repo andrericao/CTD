@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230627 22:38:29.389" rpa="false" schemaversion="4">
+<suite id="s1" name="Resource" source="C:\Users\andre\Documents\Programação\CTD\4_bimestre\Testing\RobotYT\resource.robot">
+<test id="s1-t1" name="Abrir pagina" line="6">
+<kw name="Acessar site" library="yt">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 22:38:30.757" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg timestamp="20230627 22:38:30.758" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230627 22:38:30.758" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</msg>
+<status status="FAIL" starttime="20230627 22:38:30.754" endtime="20230627 22:38:30.775"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230627 22:38:30.775" endtime="20230627 22:38:30.775"/>
+</kw>
+<status status="FAIL" starttime="20230627 22:38:30.747" endtime="20230627 22:38:30.776"/>
+</kw>
+<kw name="Fazer login" library="yt">
+<status status="NOT RUN" starttime="20230627 22:38:30.896" endtime="20230627 22:38:30.896"/>
+</kw>
+<status status="FAIL" starttime="20230627 22:38:30.666" endtime="20230627 22:38:30.956">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</status>
+</test>
+<status status="FAIL" starttime="20230627 22:38:29.393" endtime="20230627 22:38:31.414"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Resource">Resource</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
