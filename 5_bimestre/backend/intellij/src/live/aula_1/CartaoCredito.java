@@ -1,16 +1,16 @@
-package aula_1;
+package live.aula_1;
 
 public class CartaoCredito {
     private String nome;
-    private Long numero;
+    private String numero;
 
-    public CartaoCredito(String nome, Long numero){
+    public CartaoCredito(String nome, String numero){
         this.nome = nome;
         this.numero = numero;
     }
 
     public boolean tem20caracteres(){
-        int quantidadecaracteres = numero.toString().length();
+        int quantidadecaracteres = numero.length();
         return quantidadecaracteres == 16;
     }
 
@@ -22,11 +22,11 @@ public class CartaoCredito {
         this.nome = nome;
     }
 
-    public Long getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(Long numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 }
