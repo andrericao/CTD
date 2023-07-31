@@ -1,4 +1,4 @@
-package pg.exercicios;
+package playGround.exercicios.testDrivenDevelopment_tdd;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Locale;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 

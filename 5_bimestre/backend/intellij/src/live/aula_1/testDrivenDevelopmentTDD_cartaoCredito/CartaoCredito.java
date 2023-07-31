@@ -1,4 +1,4 @@
-package live.aula_1;
+package live.aula_1.testDrivenDevelopmentTDD_cartaoCredito;
 
 public class CartaoCredito {
     private String nome;
@@ -11,7 +11,13 @@ public class CartaoCredito {
 
     public boolean tem20caracteres(){
         int quantidadecaracteres = numero.length();
-        return quantidadecaracteres == 16;
+        return quantidadecaracteres == 19;
+    }
+
+    public int tem19caracteres(){ //Inventei
+       int quantidadecaracteres = numero.length();
+        System.out.println("tenho 19 caracteres");
+        return quantidadecaracteres;
     }
 
     public String getNome() {

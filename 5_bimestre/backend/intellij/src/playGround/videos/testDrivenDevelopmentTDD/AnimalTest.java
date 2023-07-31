@@ -1,4 +1,4 @@
-package pg.videos;
+package playGround.videos.testDrivenDevelopmentTDD;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package pg.exercicios;
+package playGround.exercicios.testDrivenDevelopment_tdd;
 
 public class Execucao {
     public static void main(String[] args) {
