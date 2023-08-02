@@ -7,5 +7,7 @@ public class CheckEmail{
     public CheckEmail() {
         this.gerenciador = new GerenciadorGerencia();
     }
+
+    //public void verificarEmail(Email email) {    }
     //public void verificarEmail(){}
 }
