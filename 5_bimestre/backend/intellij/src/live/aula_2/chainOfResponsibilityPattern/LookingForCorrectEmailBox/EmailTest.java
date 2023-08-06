@@ -7,12 +7,25 @@ class EmailTest {
     public void enviarEmailAoGestor(){
 
         //Given
-        String origem = "email@colmeia.com";
+        String origem = "gerencia@colmeia.com";
         String destino = "tecnologia@colmeia.com";
         String assunto = "Gerência";
 
         CheckEmail processador = new CheckEmail();
         Email email = new Email(origem, destino, assunto);
-        processador.verificarEmail(email);
+        processador.verificar(email);
+    }
+
+    @Test
+    public void enviarEmailAoComercial(){
+
+        //Given
+        String origem = "email@colmeia.com";
+        String destino = "comercial@colmeia.com";
+        String assunto = "COMERCIAL";
+
+        CheckEmail processador = new CheckEmail();
+        Email email = new Email(origem, destino, assunto);
+        processador.verificar(email);
     }
 }

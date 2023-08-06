@@ -7,7 +7,5 @@ public abstract class Gerenciador {
         this.gerenciadorSeguinte = gerenciadorSeguinte;
     }
 
-    public abstract void verificarEmail(Email email){
-
-    }
+    public abstract void verificar(Email email);
 }

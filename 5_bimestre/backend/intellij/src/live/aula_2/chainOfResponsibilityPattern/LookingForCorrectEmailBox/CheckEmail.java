@@ -5,9 +5,14 @@ public class CheckEmail{
     Gerenciador gerenciador;
 
     public CheckEmail() {
-        this.gerenciador = new GerenciadorGerencia();
+        gerenciador = new GerenciadorGerencia();
+
+        Gerenciador comercial = new GerenciadorComercial();
+        gerenciador.setGerenciadorSeguinte(comercial);
+        //gerenciador.setGerenciadorSeguinte("PRÉXIMO GERENCIADOR, VAI ESTAR AQUI!!!");
     }
 
-    //public void verificarEmail(Email email) {    }
-    //public void verificarEmail(){}
+    public void verificar(Email email){
+        gerenciador.verificar(email);
+    }
 }
