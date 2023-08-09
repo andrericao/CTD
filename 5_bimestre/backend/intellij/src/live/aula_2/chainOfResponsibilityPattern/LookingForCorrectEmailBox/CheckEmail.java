@@ -9,7 +9,7 @@ public class CheckEmail{
 
         Gerenciador comercial = new GerenciadorComercial();
         gerenciador.setGerenciadorSeguinte(comercial);
-        //gerenciador.setGerenciadorSeguinte("PRÉXIMO GERENCIADOR, VAI ESTAR AQUI!!!");
+        //gerenciador.setGerenciadorSeguinte("PRÓXIMO GERENCIADOR, VAI ESTAR AQUI!!!");
     }
 
     public void verificar(Email email){
