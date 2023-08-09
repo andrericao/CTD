@@ -1,7 +1,10 @@
 package teste;
 
+import org.apache.log4j.Logger;
+
 public class Calculadora {
 
+    private static final Logger logger = Logger.getLogger(Calculadora.class);
     private int valor1;
     private int valor2;
 
@@ -23,9 +26,12 @@ public class Calculadora {
     }
 
     public int dividir(){
+        logger.info("Tentativa de Divisão: " + valor1 + "/" + valor2);
         try {
+            logger.debug("Try da Divisão");
             return valor1 / valor2;
         } catch (Exception e){
+            logger.error("Divisão deu ruim: ", e);
             return 0;
         }
     }
