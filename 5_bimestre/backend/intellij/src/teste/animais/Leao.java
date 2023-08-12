@@ -1,4 +1,4 @@
-package teste;
+package teste.animais;
 
 import org.apache.log4j.Logger;
 
@@ -26,7 +26,7 @@ public class Leao {
 
     public void eMaiorQue10(){
         if(idade > 20) {
-            logger.error("A idade de " + nome + " está incorreta");
+            logger.debug("A idade de " + nome + " está incorreta");
         } else if(idade > 10){
             logger.info("O leão " + nome + " é Alfa!");
         } else if (idade < 0){

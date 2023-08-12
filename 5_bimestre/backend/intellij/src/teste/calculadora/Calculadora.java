@@ -1,4 +1,4 @@
-package teste;
+package teste.calculadora;
 
 import org.apache.log4j.Logger;
 
