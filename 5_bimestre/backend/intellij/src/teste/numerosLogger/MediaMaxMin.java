@@ -1,39 +1,54 @@
 package teste.numerosLogger;
 
 import org.apache.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MediaMaxMin {
-    public static void main(String[] args) {
+public class MediaMaxMin{
+    private static final Logger log = Logger.getLogger(MediaMaxMin.class);
+    private String nome;
 
-        final Logger log = Logger.getLogger(MediaMaxMin.class);
+    private ArrayList<ListaNumeros> listaNumero = new ArrayList<>();
 
-        ArrayList<Integer> numeros = new ArrayList<>();
+    public MediaMaxMin(String nome) {
+        this.nome = nome;
+    }
 
-        numeros.add(2);
-        numeros.add(32);
-        numeros.add(5);
-        numeros.add(19);
-        numeros.add(17);
-        numeros.add(13);
-        numeros.add(80);
+    public void adicionarNumero(ListaNumeros numeros) {
+        listaNumero.add(numeros);
+    }
 
-        int menor = Collections.min(numeros);
-        log.info("O menor número é " + menor);
-        int maior = Collections.max(numeros);
-        System.out.println(maior);
-        int tamanho = numeros.size();
-        System.out.println(tamanho);
 
-        /*public int mediaNumeros(){
-            int i;
-                for(i = 0; i < numeros.size(); i++){
-                    i += numeros.get(i);
-                }
-            int media = i / numeros.size();
-            System.out.println(media);
-        }*/
+    public void mostraNumeros() {
+        ListaNumeros menor = Collections.min(listaNumero);
+        ListaNumeros maior = Collections.max(listaNumero);
+        int tamanho = listaNumero.size();
+
+        log.info("O menor número é " + menor + ", o maior número é " + maior + " e o tamanho da lista é de " + tamanho + " numeros");
+    }
+    /*public int calcularMedia(){
+        int i;
+        int soma = 0;
+        for(i = 0; i < listaNumero.size(); i++) {
+            soma += listaNumero.get(i);
+        }
+        int media = soma / listaNumero.size();
+        return media;
+    }*/
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public ArrayList<ListaNumeros> getListaNumero() {
+        return listaNumero;
+    }
+
+    public void setListaNumero(ArrayList<ListaNumeros> listaNumero) {
+        this.listaNumero = listaNumero;
     }
 }

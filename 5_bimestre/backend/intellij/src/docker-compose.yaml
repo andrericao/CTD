@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  h2:
+    container_name: 'h2'
+    hostname: 'h2'
+    image: 1000kit/h2
+    ports:
+      - "8181:8181"
+      - "1521:1521"
+    volumes:
+      - ~/db/:/opt/h2-data
