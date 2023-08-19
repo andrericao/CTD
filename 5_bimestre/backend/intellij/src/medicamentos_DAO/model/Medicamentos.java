@@ -58,4 +58,15 @@ public class Medicamentos {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    @Override
+    public String toString() {
+        return "Medicamentos{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", laboratorio=" + laboratorio +
+                ", quantidade=" + quantidade +
+                ", preco=" + preco +
+                '}';
+    }
 }
