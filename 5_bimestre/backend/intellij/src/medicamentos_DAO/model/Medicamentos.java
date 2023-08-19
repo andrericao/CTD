@@ -1,4 +1,4 @@
-package medicamentos;
+package medicamentos_DAO.model;
 
 public class Medicamentos {
     private Integer id;
@@ -7,7 +7,11 @@ public class Medicamentos {
     private int quantidade;
     private double preco;
 
-    public Medicamentos(Integer id, String nome, TipoLaboratorio laboratorio, int quantidade, double preco) {
+    public Medicamentos(Integer id,
+                        String nome,
+                        TipoLaboratorio laboratorio,
+                        Integer quantidade,
+                        Double preco) {
         this.id = id;
         this.nome = nome;
         this.laboratorio = laboratorio;

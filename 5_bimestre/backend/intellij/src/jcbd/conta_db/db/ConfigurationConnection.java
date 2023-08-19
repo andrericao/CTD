@@ -18,14 +18,14 @@ public class ConfigurationConnection {
             );
             """;
 
-    public static Connection getConnectiom() throws Exception{
+    public static Connection getConnection() throws Exception{
 
         log.info("Valida se existe conexão criada");
         if(connection == null) {
 
             log.info("Nenhuma conexão criada. criando conexão");
             Class.forName("org.h2.Driver").newInstance();
-            connection = DriverManager.getConnection("jbcd:h2:file:./db2/test", "sa", "");
+            connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
 
             log.info("Criando tabela do banco de dados");
             Statement statement = connection.createStatement();

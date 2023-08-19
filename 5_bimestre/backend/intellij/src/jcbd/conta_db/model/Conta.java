@@ -1,5 +1,7 @@
 package jcbd.conta_db.model;
 
+import java.util.UUID;
+
 public class Conta {
     private String id;
     private String nome;
@@ -11,6 +13,15 @@ public class Conta {
                  String numeroConta,
                  int saldo) {
         this.id = id;
+        this.nome = nome;
+        this.numeroConta = numeroConta;
+        this.saldo = saldo;
+    }
+
+    public Conta(String nome,
+                 String numeroConta,
+                 int saldo) {
+        this.id = UUID.randomUUID().toString(); // ESTUDAR
         this.nome = nome;
         this.numeroConta = numeroConta;
         this.saldo = saldo;
@@ -46,5 +57,15 @@ public class Conta {
 
     public void setSaldo(int saldo) {
         this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "id='" + id + '\'' +
+                ", nome='" + nome + '\'' +
+                ", numeroConta='" + numeroConta + '\'' +
+                ", saldo=" + saldo +
+                '}';
     }
 }
