@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS Hoteis;
+CREATE TABLE Hoteis(
+    id INT PRIMARY KEY NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    rua VARCHAR(255) NOT NULL,
+    numero INT NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado CHAR(2) NOT NULL,
+    classificacao VARCHAR(50) NOT NULL
+);
