@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from './Post';
 
-function Feed(){
+export default function Feed(){
 	return (
 	<>
 		<Post post="Post 1" qtdComentarios="100"/>
@@ -11,5 +11,3 @@ function Feed(){
 	</>
 	)
 }
-
-export default Feed;

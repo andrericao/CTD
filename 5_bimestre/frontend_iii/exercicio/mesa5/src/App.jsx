@@ -1,4 +1,6 @@
 import Products from "./components/Products";
+import './app.css';
+import { useState } from "react";
 
 const produtos = [
   {
@@ -23,34 +25,59 @@ const produtos = [
   },
 ];
 
-function App() {
-  return (
+export default function App(){
 
-    
+  const [info, setInfo] = useState([])
+
+  const addInfo = (nome, acao) => { 
+    setInfo((info) => {
+      return [...info, { nome, acao }]
+  })
+}
+
+  return (
     <div>
       <h1>Produtos</h1>
 
-      <ul>
-        <li>
-          <h2>{produtos[0].nome}</h2>
-          <img src={produtos[0].image} />
-          <h3>{produtos[0].preco}</h3>
-        </li>
+      <div className="lista_de_produtos">
+        
+        {produtos.map((produto, i) => {
+          return <Products key = {i} 
+          nome = {produto.nome}
+          image = {produto.image}
+          preco ={produto.preco}>
 
-        <li>
-          <h2>{produtos[1].nome}</h2>
-          <img src={produtos[1].image} />
-          <h3>{produtos[1].preco}</h3>
-        </li>
+            <div className="actButton">
 
-        <li>
-          <h2>{produtos[2].nome}</h2>
-          <img src={produtos[2].image} />
-          <h3>{produtos[2].preco}</h3>
-        </li>
-      </ul>
+              <button 
+              className="adButton button"
+              onClick={() => 
+              { addInfo(produto.nome, "add") }} >
+                Adicionar
+                </button>
+
+                <button 
+              className="remButton button"
+              onClick={() => 
+              { addInfo(produto.nome, "rem") }} >
+                Remover
+                </button>
+
+            </div>
+
+            </Products>
+              })}
+      </div>
+
+      <h2>STATUS</h2>
+
+      {info.map((informacao, i) => {
+        return <p key = {i} > {informacao.nome} - {" "}
+        <span className={informacao.acao}>
+          {informacao.acao == "add" ? "Adicionado" : "Removido"}
+        </span>
+        </p>
+      })}
     </div>
   );
 }
-
-export default App;

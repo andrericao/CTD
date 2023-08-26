@@ -1,8 +1,8 @@
 import React from 'react';
+import '../App.css';
 
-function Post(props){
+export default function Post(props){
 
-	//let qtdComentarios = 101;
 	let listaDeComentarios = ["Comentarios 1", "Comentarios 2"];
 
 	return (
@@ -11,10 +11,8 @@ function Post(props){
 		<p>Comentários({props.qtdComentarios})</p>
 
 		<ul>
-			{listaDeComentarios.map(comentario => <li>{comentario}</li>)}
+			{listaDeComentarios.map(comentario => <li>{comentario}</li> )}
 		</ul>
 	</>
-	)
+	);
 }
-
-export default Post;
