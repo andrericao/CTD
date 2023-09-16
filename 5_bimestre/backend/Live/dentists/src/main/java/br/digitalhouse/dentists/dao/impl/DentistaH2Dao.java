@@ -5,6 +5,7 @@ import br.digitalhouse.dentists.dao.IDao;
 import br.digitalhouse.dentists.model.Dentista;
 import br.digitalhouse.dentists.model.EspecialidadeEnum;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Slf4j
+@Repository
 public class DentistaH2Dao implements IDao<Dentista> {
     private static final String SQL_CRIACAO_DENTISTA = """
             INSERT INTO Dentista(nome, cro, data_nascimento, especialidade) VALUES(?, ?, ?, ?);

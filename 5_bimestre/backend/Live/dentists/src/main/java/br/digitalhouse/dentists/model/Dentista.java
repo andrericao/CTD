@@ -19,16 +19,6 @@ public class Dentista implements Serializable {
     private String cro;
     private LocalDate dataNascimento;
     private EspecialidadeEnum especialidade;
-
-    public Dentista(String nome,
-                    String cro,
-                    LocalDate dataNascimento,
-                    EspecialidadeEnum especialidade) {
-        this.nome = nome;
-        this.cro = cro;
-        this.dataNascimento = dataNascimento;
-        this.especialidade = especialidade;
-    }
     public Date getDataNascimentoComoDate(){
         return Date.valueOf(getDataNascimento());
     }

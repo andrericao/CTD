@@ -3,11 +3,15 @@ package br.digitalhouse.dentists.service.impl;
 import br.digitalhouse.dentists.dao.IDao;
 import br.digitalhouse.dentists.model.Dentista;
 import br.digitalhouse.dentists.service.DentistaService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class DentistaServiceImpl implements DentistaService {
     private final IDao<Dentista> dentistaIDao;
+    //O ServiceImpl instacia uma IDAO para determinar e qual
+    //banco o dado será buscado / persistido
 
     public DentistaServiceImpl(IDao<Dentista> dentistaIDao) {
         this.dentistaIDao = dentistaIDao;
