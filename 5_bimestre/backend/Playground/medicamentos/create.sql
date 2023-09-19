@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS medicines(
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    laboratory VARCHAR(255) NOT NULL,
+    amount INT NOT NULL,
+    price DOUBLE
+)
