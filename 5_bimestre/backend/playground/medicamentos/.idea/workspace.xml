@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f1dcab6-1d98-4ae5-9900-14f9b3f5085e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/src/main/java/com/example/PrimeiroProjetoSpring/PrimeiroProjetoSpringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/src/main/resources/22 Exercício.docx.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimeiroProjetoSpring/src/test/java/com/example/PrimeiroProjetoSpring/PrimeiroProjetoSpringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/src/main/java/br/digitalhouse/animal/AnimalApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/src/main/resources/Exercício com o professor.docx.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animal/src/test/java/br/digitalhouse/animal/AnimalApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/java/br/digitalhouse/exericio/cars/CarsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/java/br/digitalhouse/exericio/cars/controller/CarsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/java/br/digitalhouse/exericio/cars/model/Cars.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/java/br/digitalhouse/exericio/cars/service/CarsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/java/br/digitalhouse/exericio/cars/service/impl/CarsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/resources/Exercício cars.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cars/src/test/java/br/digitalhouse/exericio/cars/CarsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/java/br/digutalhouse/dentist/DentistaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/java/br/digutalhouse/dentist/controller/DentistController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/java/br/digutalhouse/dentist/domain/Dentist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/java/br/digutalhouse/dentist/service/DentistService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/java/br/digutalhouse/dentist/service/DentistServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/resources/14 Exercício aula MVC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dentist/src/test/java/br/digutalhouse/dentist/DentistaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/MedicinesApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/controller/MedicinesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/dao/ConfigurationJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/dao/IDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/dao/Impl/MedicinesDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/model/Medicines.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/digitalhouse/exericio/medicines/service/MedicinesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/digitalhouse/exericio/medicamentos/MedicamentosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/main/java/br/digitalhouse/myProject/MyProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/main/java/br/digitalhouse/myProject/controller/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/main/java/br/digitalhouse/myProject/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/main/java/br/digitalhouse/myProject/service/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myProject/src/test/java/br/digitalhouse/myProject/MyProjectApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/java/br/digitalhouse/exericio/trainer/TrainerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/java/br/digitalhouse/exericio/trainer/controller/TrainerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/java/br/digitalhouse/exericio/trainer/domain/Trainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/java/br/digitalhouse/exericio/trainer/service/TrainerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/java/br/digitalhouse/exericio/trainer/service/impl/TrainerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/resources/Exercício trainer.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trainer/src/test/java/br/digitalhouse/exericio/trainer/TrainerApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2VcRpKAQ8QHjsZeaqgBV85AK0eF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/mandarinopaulo/Documentos/programacao/CTD/5_bimestre/backend/Playground/apiRest/medicamentos"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MedicinesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.digitalhouse.exericio.medicines.MedicinesApplication" />
+      <module name="medicamentos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.digitalhouse.exericio.medicines.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MedicinesApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f1dcab6-1d98-4ae5-9900-14f9b3f5085e" name="Changes" comment="" />
+      <created>1695133565057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695133565057</updated>
+    </task>
+    <servers />
+  </component>
+</project>
