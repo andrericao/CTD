@@ -39,7 +39,8 @@ class PacientTest {
     }
 
     @Test
-    void testNewPacientError(){
+    void testNewPacientNameError(){
+        String expectedMessageError = "'name' not given!";
         String expectedName = "André";
         String expectedLastName = "Paulo";
         String expectedDocument = "100.200.300-40";
@@ -59,5 +60,56 @@ class PacientTest {
                         expectedContact,
                         expectedGender));
         Assertions.assertNotNull(exception);
+        Assertions.assertEquals(expectedMessageError, exception.getMessage());
+    }
+
+    @Test
+    void testNewPacientDateOfBirthError(){
+        String expectedMessageError = "'dateOfBirth' must be bigger than today";
+        String expectedName = "André";
+        String expectedLastName = "Paulo";
+        String expectedDocument = "100.200.300-40";
+        String expectedEmail = "andrepaulo@digitalhouse.com";
+        String expectedPhone = "(85) 8665-5000";
+        Contact expectedContact = new Contact(expectedPhone, expectedEmail);
+        LocalDate expectedDateOfBirth = LocalDate.of(2030, 12, 05);
+        GenderEnum expectedGender = GenderEnum.M;
+
+        IllegalArgumentException exception = Assertions.assertThrows(
+                IllegalArgumentException.class, () ->
+                        Pacient.newPacient(
+                                expectedName,
+                                expectedLastName,
+                                expectedDocument,
+                                expectedDateOfBirth,
+                                expectedContact,
+                                expectedGender));
+        Assertions.assertNotNull(exception);
+        Assertions.assertEquals(expectedMessageError, exception.getMessage());
+    }
+
+    @Test
+    void testNewPacientContactError(){
+        String expectedMessageError = "'contact' incorrect!";
+        String expectedName = "André";
+        String expectedLastName = "Paulo";
+        String expectedDocument = "100.200.300-40";
+        String expectedEmail = null;
+        String expectedPhone = null;
+        Contact expectedContact = new Contact(expectedPhone, expectedEmail);
+        LocalDate expectedDateOfBirth = LocalDate.of(1990, 12, 05);
+        GenderEnum expectedGender = GenderEnum.M;
+
+        IllegalArgumentException exception = Assertions.assertThrows(
+                IllegalArgumentException.class, () ->
+                        Pacient.newPacient(
+                                expectedName,
+                                expectedLastName,
+                                expectedDocument,
+                                expectedDateOfBirth,
+                                expectedContact,
+                                expectedGender));
+        Assertions.assertNotNull(exception);
+        Assertions.assertEquals(expectedMessageError, exception.getMessage());
     }
 }

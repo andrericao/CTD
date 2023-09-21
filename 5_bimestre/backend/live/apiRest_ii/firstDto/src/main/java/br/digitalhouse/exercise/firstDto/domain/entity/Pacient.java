@@ -49,8 +49,16 @@ public class Pacient {
 
     private void validate(){
         if(name == null){
-            throw new IllegalArgumentException("'name' not given");
-
+            throw new IllegalArgumentException("'name' not given!");
+        }
+        if(dateOfBirth.isAfter(LocalDate.now())){
+            throw new IllegalArgumentException("'dateOfBirth' must be bigger than today");
+        }
+        if(contact == null){
+            throw new IllegalArgumentException("'contact' incorrect!");
+        }
+        if(contact.getPhone() == null && contact.getPhone() == null){
+            throw new IllegalArgumentException("'contact' incorrect!");
         }
     }
 
