@@ -13,7 +13,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -22,7 +21,8 @@ import java.util.Optional;
 @Repository
 public class DentistaH2Dao implements IDao<Dentista> {
     private static final String SQL_CRIACAO_DENTISTA = """
-            INSERT INTO Dentista(nome, cro, data_nascimento, especialidade) VALUES(?, ?, ?, ?);
+            INSERT INTO Dentista(nome, cro, data_nascimento, especialidade)
+            VALUES(?, ?, ?, ?);
             """;
     private static final String SQL_BUSCA_DENTISTA_POR_ID = """
             SELECT d.id, d.nome, d.cro, d.data_nascimento, d.especialidade
