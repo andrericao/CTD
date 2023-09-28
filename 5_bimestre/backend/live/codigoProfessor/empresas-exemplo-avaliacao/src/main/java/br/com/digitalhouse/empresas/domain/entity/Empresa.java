@@ -26,7 +26,7 @@ public class Empresa {
     private String nome;
 
     @Column(length = 120, nullable = false)
-    private String nomeFantasia;
+    private String razaoSocial;
 
     @Column(nullable = false, unique = true)
     private String cnpj;

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.br.CNPJ;
 
 import java.util.UUID;
 
@@ -14,12 +15,12 @@ import java.util.UUID;
 public class Clinica {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(unique = true)
+    @Column(length = 36)
     private UUID id;
 
     @Column(length = 100, nullable = false)
     private String nome;
-
+    @CNPJ
     @Column(length = 18, nullable = false)
     private String cnpj;
 

@@ -30,6 +30,7 @@ public class EmpresaServiceImpl implements EmpresaService {
 
     @Override
     public Empresa criar(Empresa empresa) {
+        // todo: Olhar aplicação StudentOrm na pasta playgroun para fazer validações
         return this.empresaRepository.save(empresa);
     }
 

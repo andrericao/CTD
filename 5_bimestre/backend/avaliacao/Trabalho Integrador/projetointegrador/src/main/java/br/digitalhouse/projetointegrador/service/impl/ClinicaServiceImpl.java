@@ -6,6 +6,7 @@ import br.digitalhouse.projetointegrador.service.ClinicaService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class ClinicaServiceImpl implements ClinicaService {
@@ -19,7 +20,7 @@ public class ClinicaServiceImpl implements ClinicaService {
         return clinicaIDao.criar(clinica);
     }
     @Override
-    public Clinica buscarClinicaPorId(Integer id){
+    public Clinica buscarClinicaPorId(UUID id){
         return clinicaIDao.buscarPorId(id).orElseThrow(IllegalAccessError::new);
     }
 
@@ -34,7 +35,7 @@ public class ClinicaServiceImpl implements ClinicaService {
     }
 
     @Override
-    public void excluirClinica(Integer id){
+    public void excluirClinica(UUID id){
         clinicaIDao.excluir(id);
     }
 

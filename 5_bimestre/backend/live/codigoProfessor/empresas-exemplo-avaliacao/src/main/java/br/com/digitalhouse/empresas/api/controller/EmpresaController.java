@@ -91,7 +91,7 @@ public class EmpresaController {
         Empresa empresa = new Empresa();
         empresa.setCnpj(request.getCnpj());
         empresa.setNome(request.getNome());
-        empresa.setNomeFantasia(request.getRazaoSocial());
+        empresa.setRazaoSocial(request.getRazaoSocial());
 
         Contato contato = new Contato();
         contato.setEmail(request.getContato().getEmail());
@@ -103,13 +103,13 @@ public class EmpresaController {
     }
 
     /**
-     * O método abaixo é um metodo que transafor uma empresa em uma empresaResponse
+     * O método abaixo é um metodo que transaforma uma empresa em uma empresaResponse
      */
     private EmpresaResponse empresaResponseByEmpresa(Empresa empresa) {
         EmpresaResponse empresaResponse = new EmpresaResponse();
         empresaResponse.setNome(empresa.getNome());
         empresaResponse.setCnpj(empresa.getCnpj());
-        empresaResponse.setRazaoSocial(empresa.getNomeFantasia());
+        empresaResponse.setRazaoSocial(empresa.getRazaoSocial());
 
         empresaResponse.setId(empresa.getId());
         ContatoResponse contato = new ContatoResponse();

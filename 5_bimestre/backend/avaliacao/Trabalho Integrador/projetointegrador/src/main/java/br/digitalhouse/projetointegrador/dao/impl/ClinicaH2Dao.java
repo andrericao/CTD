@@ -3,14 +3,13 @@ package br.digitalhouse.projetointegrador.dao.impl;
 import br.digitalhouse.projetointegrador.dao.ConfiguracaoJDBC;
 import br.digitalhouse.projetointegrador.dao.IDao;
 import br.digitalhouse.projetointegrador.model.Clinica;
+import br.digitalhouse.projetointegrador.model.Contato;
+import br.digitalhouse.projetointegrador.model.Endereco;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Slf4j
 @Repository
@@ -44,7 +43,6 @@ public class ClinicaH2Dao implements IDao<Clinica> {
 
     @Override
     public Clinica criar(Clinica clinica){
-
         log.info("Conectando com o banco de dados");
         Connection connection = configuracaoJDBC.getConnection();
         log.info("Conexão bem sucedida!");
@@ -60,7 +58,7 @@ public class ClinicaH2Dao implements IDao<Clinica> {
 
             ResultSet resultado = statement.getGeneratedKeys();
 
-            while(resultado.next()) clinica.setId(resultado.getInt(1));
+            while(resultado.next()) clinica.setId((UUID) resultado.getObject(1));
             log.info("Foi registrado com o ID " + clinica.getId());
             return clinica;
 
@@ -68,16 +66,15 @@ public class ClinicaH2Dao implements IDao<Clinica> {
             log.info("A criação deu ruim");
             return null;
         }
-        return clinica;
     }
 
     @Override
-    public Optional<Clinica> buscarPorId(Integer id){
+    public Optional<Clinica> buscarPorId(UUID id){
 
         Connection connection = configuracaoJDBC.getConnection();
 
         try(PreparedStatement statement = connection.prepareStatement(SQL_BUSCAR_CLINICA_POR_ID)){
-            statement.setInt(1, id);
+            statement.setObject(1, id);
             ResultSet resultSet = statement.executeQuery();
             Clinica clinica = null;
 
@@ -100,16 +97,12 @@ public class ClinicaH2Dao implements IDao<Clinica> {
             List<Clinica> clinicas = new ArrayList<>();
             while(resultSet.next()){
                 Clinica clinica = getClinicaByResultSet(resultSet);
-                clinica.add(clinica);
+                clinicas.add(clinica);
             }
             return clinicas;
         } catch (Exception e){
             return Collections.emptyList();
         }
-
-
-        List<Clinica> clinicas = new ArrayList<>();
-        return clinicas;
     }
 
     @Override
@@ -132,10 +125,10 @@ public class ClinicaH2Dao implements IDao<Clinica> {
     }
 
     @Override
-    public void excluir (Integer id){
+    public void excluir (UUID id){
         Connection connection = configuracaoJDBC.getConnection();
         try(PreparedStatement statement = connection.prepareStatement(SQL_EXCLUIR)){
-            statement.setInt(1, id);
+            statement.setObject(1, id);
             statement.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();
@@ -145,13 +138,13 @@ public class ClinicaH2Dao implements IDao<Clinica> {
 
     private Clinica getClinicaByResultSet(ResultSet resultSet) throws SQLException{
         Clinica clinica;
-        Integer id = resultSet.getInt(1);
+        UUID id = (UUID) resultSet.getObject(1);
         String nome = resultSet.getString(2);
         String cnpj = resultSet.getString(3);
         String razaoSocial = resultSet.getString(4);
         String descricao = resultSet.getString(5);
-        Object endereco = resultSet.getObject(6);
-        Object contato = resultSet.getObject(7);
+        Endereco endereco = (Endereco) resultSet.getObject(6);
+        Contato contato = (Contato) resultSet.getObject(7);
         clinica = new Clinica(id, nome, cnpj, razaoSocial, descricao, endereco, contato);
         return clinica;
     }

@@ -7,10 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @Slf4j
 @RestController
-@RequestMapping
+@RequestMapping("/clinica")
 public class ClinicaController {
     private ClinicaService clinicaService;
 
@@ -25,7 +26,7 @@ public class ClinicaController {
     }
 
     @GetMapping("{id}")
-    public Clinica buscarClinicaPorId(@PathVariable Integer id) {
+    public Clinica buscarClinicaPorId(@PathVariable UUID id) {
         return clinicaService.buscarClinicaPorId(id);
     }
 
@@ -35,13 +36,13 @@ public class ClinicaController {
     }
 
     @PutMapping
-    public Clinica atualizarClinica(@PathVariable Integer id, @RequestBody Clinica clinica){
+    public Clinica atualizarClinica(@PathVariable UUID id, @RequestBody Clinica clinica){
         clinica.setId(id);
         return clinicaService.atualizarClinica(clinica);
     }
 
     @DeleteMapping("{id}")
-    public void excluirClinica(@PathVariable Integer id) {
+    public void excluirClinica(@PathVariable UUID id) {
         clinicaService.excluirClinica(id);
     }
 }

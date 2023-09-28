@@ -17,6 +17,4 @@ public class EmpresaRequest {
     private String razaoSocial;
     @NotNull
     private ContatoRequest contato;
-
-
 }
