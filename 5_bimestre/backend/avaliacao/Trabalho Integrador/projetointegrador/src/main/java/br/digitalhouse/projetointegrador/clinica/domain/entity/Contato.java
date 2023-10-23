@@ -23,7 +23,7 @@ public class Contato {
     @Email
     private String email;
     @Column(length = 15)
-    @Pattern(regexp = "\\((\\d{2})\\) (\\d{4,5})-(\\d{4})")
+    @Pattern(regexp = "\\(?\\d{2}\\)?\\s?\\d{4,5}\\-?\\d{4}")
     private String telefone;
     @Column(updatable = false)
     private LocalDateTime createdAt;

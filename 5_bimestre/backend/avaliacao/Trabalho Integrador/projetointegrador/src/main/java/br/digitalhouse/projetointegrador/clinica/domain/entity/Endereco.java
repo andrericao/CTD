@@ -30,7 +30,7 @@ public class Endereco {
     @Column(length = 2)
     private String estado;
     @Column(length = 9)
-    @Pattern(regexp = "(\\d{5})-(\\d{3})")
+    @Pattern(regexp = "\\d{5}\\-?\\d{3}")
     private String cep;
 
     @PrePersist

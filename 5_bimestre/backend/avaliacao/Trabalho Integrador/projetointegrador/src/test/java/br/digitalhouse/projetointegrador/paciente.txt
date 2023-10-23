@@ -1,0 +1,40 @@
+Hibernate: insert into contatos (created_at,email,telefone,update_at,id) values (?,?,?,?,?)
+Hibernate: insert into enderecos (bairro,cep,cidade,created_at,estado,logradouro,update_at,id) values (?,?,?,?,?,?,?,?)
+Hibernate: insert into pacientes (id_contato,created_at,data_nascimento,id_endereco,nome,sexo,update_at,id) values (?,?,?,?,?,?,?,?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/pacientes
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"245"]
+             Body = {"nome":"Dareon","dataNascimento":"2023-10-19","sexo":"M","endereco":{"logradouro":"s/n Travessa Paula","bairro":"Casa 1","cidade":"Tacuru","estado":"AP","cep":"17326-392"},"contato":{"email":"heitor.ribeiro@live.com","telefone":"53 410848588"}}
+    Session Attrs = {}
+
+Handler:
+             Type = br.digitalhouse.projetointegrador.clinica.api.controller.PacienteController
+           Method = br.digitalhouse.projetointegrador.clinica.api.controller.PacienteController#criarPaciente(PacienteRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"3833533a-6dd2-4271-912f-971b7b090f12","nome":"Dareon","dataNascimento":"2023-10-19","sexo":"M","createdAt":"2023-10-19T18:54:09.397234173","updateAt":null,"endereco":{"id":"88ffacfc-63fb-4a48-affb-d9c041a80407","logradouro":"s/n Travessa Paula","bairro":"Casa 1","createdAt":"2023-10-19T18:54:09.423579999","updateAt":null,"cidade":"Tacuru","estado":"AP","cep":"17326-392"},"contato":{"id":"6b005302-05a0-4580-9c32-f955b7af839d","email":"heitor.ribeiro@live.com","telefone":"53 410848588","createdAt":"2023-10-19T18:54:09.413859371","updateAt":null}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []

@@ -76,6 +76,7 @@ public class PacienteController {
 
         Paciente pacienteCriado = pacienteService.criarPaciente(paciente);
         PacienteResponse response = pacienteResponseByPaciente(pacienteCriado);
+
         return ResponseEntity.ok(response);
 
     }
