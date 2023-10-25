@@ -32,9 +32,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 //@RunWith(SpringRunner.class)
 //@WebMvcTest(ClinicaController.class)
-//@ActiveProfiles("test")
+@ActiveProfiles("test")
 @AutoConfigureMockMvc
-@SpringBootTest
+@SpringBootTest(classes = ProjetoClinicaApplication.class)
 class ProjetoClinicaApplicationTests {
 
 	@SpyBean
